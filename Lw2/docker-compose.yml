@@ -1,10 +1,14 @@
 version: '3'
 
 services:
-  game:
+  game1:
     build: .
-    container_name: 2045-game
+    container_name: 2048-game-1
     ports:
       - '8000:8080'
-    volumes:
-      - ./:/app
+
+  game2:
+    build: .
+    container_name: 2048-game-2
+    ports:
+      - '9000:8080'
