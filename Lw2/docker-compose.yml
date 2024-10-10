@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  game:
+    build: .
+    container_name: 2045-game
+    ports:
+      - '8000:8080'
+    volumes:
+      - ./:/app
